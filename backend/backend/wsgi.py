@@ -18,6 +18,6 @@ application = get_wsgi_application()
 
 from apscheduler.schedulers.background import BackgroundScheduler
 scheduler = BackgroundScheduler()
-scheduler.add_job(send_email_to_all_users, 'cron', hour = 20 , minute = 37)
+scheduler.add_job(send_email_to_all_users, 'cron', hour = 8 , minute = 2)
 
 scheduler.start()
